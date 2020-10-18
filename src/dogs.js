@@ -31,8 +31,8 @@ const dogs = [
   },
   {
     id: 4,
-    breeds: 'CAVALIER KING CHARLES',
-    info:'The Cavalier King Charles Spaniel is a small breed of spaniel classed in the toy group of The Kennel Club and the American Kennel Club, that originated in the United Kingdom. Since 2000, it has grown in popularity in the United States and ranks as the 19th most popular pure-breed in the United States.',
+    breeds: 'CAVALIER KING CHARLES', 
+    info:'The Cavalier King Charles Spaniel is a small breed of spaniel classed in the toy group of The Kennel Club and the American Kennel Club, that originated in the United Kingdom.',
     coat: 'Long, silky, free from curl',
     colour: 'Black and Tan, Ruby(solid red), Blenheim(rich chestnut on white ground), Tricolour',
     features: 'Flattish skull, long ears, set high, short-coupled body, well-feathered tail',
@@ -52,7 +52,7 @@ const dogs = [
   {
     id: 6,
     breeds: 'HUNGARIAN VIZSLA',
-    info: `{'The Vizsla is a dog breed from Hungary and belongs to the FCI group 7. The Hungarian or Magyar Vizsla are sporting dogs and loyal companions. The Vizsla's medium size is one of the breed's most appealing characteristics'}`,
+    info: `{'The Vizsla is a dog breed from Hungary and belongs to the FCI group 7. The Hungarian or Magyar Vizsla are sporting dogs and loyal companions.}`,
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',
@@ -62,7 +62,7 @@ const dogs = [
   {
     id: 7,
     breeds: 'OLD ENGLISH SHEEPDOG',
-    info: 'The Old English Sheepdog is a large breed of dog that emerged in England from early types of herding dog. Obsolete names for the breed include Shepherds Dog and bob-tailed sheep-dog. The nickname Bob-tail originates from how dogs of the breed traditionally had their tails docked',
+    info: 'The Old English Sheepdog is a large breed of dog that emerged in England from early types of herding dog. Obsolete names for the breed include Shepherds Dog and bob-tailed sheep-dog. ',
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',
@@ -72,7 +72,7 @@ const dogs = [
   {
     id: 8,
     breeds: 'STANDARD FOODLE',
-    info: 'This is a noble, elegant and well-balanced dog with a slender muzzle and long neck. The Standard Poodle s coat is profuse and curly and is often styled. This breed comes in many coat colours, including black, white, blue, grey, silver, brown, apricot and cream',
+    info: 'This is a noble, elegant and well-balanced dog with a slender muzzle and long neck. The Standard Poodle s coat is profuse and curly and is often styled.',
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',
@@ -82,7 +82,7 @@ const dogs = [
   {
     id: 9,
     breeds: 'DOBERMAN',
-    info: 'Pinschers originated in Germany during the late 19th century, mostly bred as guard dogs. Their exact ancestry is unknown, but theyre believed to be a mixture of many dog breeds, including the Rottweiler, Black and Tan Terrier, and German Pinscher.',
+    info: 'Pinschers originated in Germany during the late 19th century, mostly bred as guard dogs. Their exact ancestry is unknown, but theyre believed to be a mixture of many dog breeds, including the Rottweiler and German Pinscher.',
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',
@@ -92,7 +92,7 @@ const dogs = [
   {
     id: 10,
     breeds: 'CHOW CHOW',
-    info: 'The Chow-Chow is a dog breed originally from northern China. The Chow-Chow is a sturdily built dog, square in profile, with a broad skull and small, triangular, erect ears with rounded tips. The breed is known for a very dense double coat that is either smooth or rough',
+    info: 'The Chow-Chow is a dog breed originally from northern China. The Chow-Chow is a sturdily built dog, square in profile, with a broad skull and small, triangular, erect ears with rounded tips.',
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',
@@ -102,7 +102,7 @@ const dogs = [
   {
     id: 11,
     breeds: 'CHIHUAHUA',
-    info: 'The Chihuahua dog breed s charms include their small size, big personality, and variety in coat types and colors. They re all dog, fully capable of competing in dog sports such as agility and obedience, and are among the top ten watchdogs recommended by experts.',
+    info: 'The Chihuahua dog breed s charms include their small size, big personality, and variety in coat types and colors. They re all dog, fully capable of competing in dog sports such as agility and obedience.',
     coat: 'Profuse, harsh but not coarse, with short, soft, close undercoat',
     colour: 'Cream, wheaten, red, grey or nearly black, brindling acceptable',
     features: 'Small head, eyes set wide apart, small, pointed ears, level back, short balanced tail',

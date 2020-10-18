@@ -3,7 +3,7 @@ import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import DogFocus from "./DogFocus";
 import { dogs } from "./dogs";
-import "./App.css";
+
 class App extends Component {
   constructor() {
     super(); //have to go with this
@@ -41,6 +41,8 @@ class App extends Component {
 
     if (this.state.focus === "") {
       return (
+        <div className="all" >
+          <br/>
         <div className="tc">
           <h1 className="dog-title">
             Dog Breeds
@@ -49,9 +51,12 @@ class App extends Component {
           <SearchBox searchChange={this.onSearchChange} />
           <CardList dogs={filteredDogs} onClick={this.onClick} />
         </div>
+        </div>
       );
     } else {
       return (
+        <div className="all" >
+          <br/>
         <div className="tc">
           <h1 className="dog-title">
             Dog Breed
@@ -69,6 +74,7 @@ class App extends Component {
             onClick={this.onClick}
             dogs={filteredDogs}
           />
+        </div>
         </div>
       );
     }

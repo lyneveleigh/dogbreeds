@@ -6,7 +6,7 @@ const SearchBox = ({ searchfield, searchChange }) => {
     <div className="pa2">
       <input 
         className="a" 
-		type="search"
+		    type="search"
 	
         placehoder="search dogs"
         onChange={searchChange}
