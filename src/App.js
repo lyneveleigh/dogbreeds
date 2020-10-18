@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import DogFocus from "./DogFocus";
 import { dogs } from "./dogs";
+import history from './history';
+
 
 class App extends Component {
   constructor() {
@@ -29,7 +32,10 @@ class App extends Component {
   };
 
   onClick = (name) => {
-    this.setState({ focus: name });
+    this.setState({ focus: name })
+   history.push('/')
+
+
   };
 
   render() {
@@ -41,41 +47,45 @@ class App extends Component {
 
     if (this.state.focus === "") {
       return (
-        <div className="all" >
-          <br/>
-        <div className="tc">
-          <h1 className="dog-title">
-            Dog Breeds
-            <i class="fas fa-paw"></i>
-          </h1>
-          <SearchBox searchChange={this.onSearchChange} />
-          <CardList dogs={filteredDogs} onClick={this.onClick} />
-        </div>
-        </div>
+        <Router basename="/dogbreeds" history={history}>
+          <div className="all">
+            <br />
+            <div className="tc">
+              <h1 className="dog-title">
+                Dog Breeds
+                <i class="fas fa-paw"></i>
+              </h1>
+              <SearchBox searchChange={this.onSearchChange} />
+              <CardList dogs={filteredDogs} onClick={this.onClick} />
+            </div>
+          </div>
+        </Router>
       );
     } else {
       return (
-        <div className="all" >
-          <br/>
-        <div className="tc">
-          <h1 className="dog-title">
-            Dog Breed
-            <i class="fas fa-paw"></i>
-          </h1>
-          <DogFocus
-            key={this.state.focus}
-            id={this.state.dogs[this.state.focus].id}
-            breeds={this.state.dogs[this.state.focus].breeds}
-            coat={this.state.dogs[this.state.focus].coat}
-            size={this.state.dogs[this.state.focus].size}
-            colour={this.state.dogs[this.state.focus].colour}
-            character={this.state.dogs[this.state.focus].character}
-            features={this.state.dogs[this.state.focus].features}
-            onClick={this.onClick}
-            dogs={filteredDogs}
-          />
-        </div>
-        </div>
+        <Router basename="/dogbreeds" history={history}>
+          <div className="all">
+            <br />
+            <div className="tc">
+              <h1 className="dog-title">
+                Dog Breed
+                <i class="fas fa-paw"></i>
+              </h1>
+              <DogFocus
+                key={this.state.focus}
+                id={this.state.dogs[this.state.focus].id}
+                breeds={this.state.dogs[this.state.focus].breeds}
+                coat={this.state.dogs[this.state.focus].coat}
+                size={this.state.dogs[this.state.focus].size}
+                colour={this.state.dogs[this.state.focus].colour}
+                character={this.state.dogs[this.state.focus].character}
+                features={this.state.dogs[this.state.focus].features}
+                onClick={this.onClick}
+                dogs={filteredDogs}
+              />
+            </div>
+          </div>
+        </Router>
       );
     }
   }
